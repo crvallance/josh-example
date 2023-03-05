@@ -1,0 +1,16 @@
+{
+    "name": "example-for-josh",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "onCreateCommand": "mkdir -p /workspace/",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+           ]
+        }
+    },
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  }
